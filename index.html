@@ -1,85 +1,96 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
-    <meta charset="gbk2312" />
-  <TITLE> WTYLOVELYH </TITLE>
+    <meta charset="UTF-8" />
+  <TITLE> 最爱的糖 </TITLE>
   <link rel="stylesheet" href="index.css" />
   <META NAME="Generator" CONTENT="EditPlus">
   <META NAME="Author" CONTENT="">
   <META NAME="Keywords" CONTENT="">
   <META NAME="Description" CONTENT="">
   <style>
-    
+  /* 使用视口单位进行适配 */
   body {
-    padding:0;
-    margin:0;
-    overflow:hidden;
-    height: 600px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh; /* 使用视口高度单位 */
     font-family: Arial, Helvetica, sans-serif;
-}
-#container{
+  }
+  #container{
     position: relative;
-}
-#wrapper{
+  }
+  #wrapper{
     width: 100%;
     position: absolute;
     text-align: center;
-}
-#words{
+  }
+  #words{
     pointer-events:none;
     font-family: 'Calligraffitti', cursive;
     position: absolute;
     width: 100%;
-    padding: 200px 0 0 0;
-    font-size: 2.8em;
+    padding: 20vh 0 0 0; /* 使用视口高度单位 */
+    font-size: 5vw; /* 使用视口宽度单位 */
     color: white;
     text-align: center;
-}
-#words p{
+  }
+  #words p{
     display: none;
-}
-#words p#w1{
+  }
+  #words p#w1{
     display: block;
-}
-#words p#w2{
+  }
+  #words p#w2{
     display: block;
     font-size: 0.5em;
-}
-p strong {
+  }
+  p strong {
     font-size: 2em;
-}
-#words p span{
+  }
+  #words p span{
     display: block;
     font-size: .4em;
-}
-#UI{
+  }
+  #UI{
     color: white;
-    width: 200px;
+    width: 20vw; /* 使用视口宽度单位 */
     cursor: pointer;
     position: relative;
     display: none;
-}
-#behaviours{
+  }
+  #behaviours{
     margin-top: 10px;
-}
-#behaviours label span{
+  }
+  #behaviours label span{
     display: inline-block;
     font-size: .7em;
-}
-#behaviours input{
+  }
+  #behaviours input{
     width: 50px;
     margin-bottom: 10px;
     margin-top: -20px;
-}
-canvas {
+  }
+  canvas {
     padding:0;
     margin:0;
-}
-div.btnbg {
+  }
+  div.btnbg {
     position:fixed;
     left:0;
     top:0;
-}</style>
+  }
+
+  /* 媒体查询，适配小屏幕设备 */
+  @media (max-width: 600px) {
+    #words {
+      font-size: 8vw;
+    }
+    #UI {
+      width: 30vw;
+    }
+  }
+  </style>
  </HEAD>
 
  <BODY>
@@ -136,9 +147,22 @@ div.btnbg {
         <div id=container>
             <div id="wrapper"></div>
             <div id="words">
-                <p id="w1">和宝宝在一起  <strong>1</strong>  年啦</p>
-	<p id="w2">起始日2024年2月27日</p>
+                <p id="w1">和宝宝在一起<strong>1</strong>年啦</p>
+    <p id="w2">起始日2024年2月27日</p>
             </div>
+            <!-- 移除樱花相关的着色器脚本 -->
+            <!-- <script id="sakura_point_vsh" type="x-shader/x_vertex">
+            ...
+            </script>
+            <script id="sakura_point_fsh" type="x-shader/x_fragment">
+            ...
+            </script>
+            <script id="fx_common_vsh" type="x-shader/x_vertex">
+            ...
+            </script>
+            <script id="bg_fsh" type="x-shader/x_fragment">
+            ...
+            </script> -->
         </div>
  </BODY>
 </HTML>
