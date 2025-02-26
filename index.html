@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
-    <meta charset="UTF-8" />
+    <meta charset="gbk2312" />
   <TITLE> 最爱的糖 </TITLE>
   <link rel="stylesheet" href="index.css" />
   <META NAME="Generator" CONTENT="EditPlus">
@@ -9,87 +9,83 @@
   <META NAME="Keywords" CONTENT="">
   <META NAME="Description" CONTENT="">
   <style>
-  /* 使用视口单位进行适配 */
+    
   body {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 100vh; /* 使用视口高度单位 */
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    height: 600px;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  #container{
+}
+#container{
     position: relative;
-  }
-  #wrapper{
+}
+#wrapper{
     width: 100%;
     position: absolute;
     text-align: center;
-  }
-  #words{
+}
+#words{
     pointer-events:none;
     font-family: 'Calligraffitti', cursive;
     position: absolute;
     width: 100%;
-    padding: 20vh 0 0 0; /* 使用视口高度单位 */
-    font-size: 5vw; /* 使用视口宽度单位 */
+    /* 增加 padding-top 的值，使文字下移 */
+    padding: 300px 0 0 0; 
+    font-size: 2.8em;
     color: white;
     text-align: center;
-  }
-  #words p{
+}
+#words p{
     display: none;
-  }
-  #words p#w1{
+}
+#words p#w1{
     display: block;
-  }
-  #words p#w2{
+}
+#words p#w2{
     display: block;
     font-size: 0.5em;
-  }
-  p strong {
+}
+p strong {
     font-size: 2em;
-  }
-  #words p span{
+}
+#words p span{
     display: block;
     font-size: .4em;
-  }
-  #UI{
+}
+#UI{
     color: white;
-    width: 20vw; /* 使用视口宽度单位 */
+    width: 200px;
     cursor: pointer;
     position: relative;
     display: none;
-  }
-  #behaviours{
+}
+#behaviours{
     margin-top: 10px;
-  }
-  #behaviours label span{
+}
+#behaviours label span{
     display: inline-block;
     font-size: .7em;
-  }
-  #behaviours input{
+}
+#behaviours input{
     width: 50px;
     margin-bottom: 10px;
     margin-top: -20px;
-  }
-  canvas {
+}
+canvas {
     padding:0;
     margin:0;
-  }
-  div.btnbg {
+}
+div.btnbg {
     position:fixed;
     left:0;
     top:0;
-  }
-
-  /* 媒体查询，适配小屏幕设备 */
-  @media (max-width: 600px) {
-    #words {
-      font-size: 8vw;
-    }
-    #UI {
-      width: 30vw;
-    }
-  }
+}
+/* 放大 3D 模型（图片） */
+.pic, .in_pic {
+    width: 120%; 
+    height: auto;
+}
   </style>
  </HEAD>
 
